@@ -1,7 +1,7 @@
 const sampleData = {
   products: [
     {
-      id: 1,
+      
       name: 'Футболка Sara Sporting Stretch',
       slug: 'sara-sporting-stretch-shirt',
       category: "Мужские рубашки",
@@ -15,11 +15,11 @@ const sampleData = {
       rating: 4.5,
       numReviews: 10,
       stock: 5,
-      isFeatured: true,
+      isFeauted: true,
       banner: 'banner-1.jpg',
     },
     {
-      id: 2,
+      
       name: 'Длинно-рукавная рубашка Luke Pro',
       slug: 'luke-pro-long-sleeved-shirt',
       category: "Мужские рубашки",
@@ -33,11 +33,11 @@ const sampleData = {
       rating: 4.2,
       numReviews: 8,
       stock: 10,
-      isFeatured: true,
+      isFeauted: true,
       banner: 'banner-2.jpg',
     },
     {
-      id: 3,
+      
       name: 'Классическая рубашка Tommy Hilfiger',
       slug: 'tommy-hilfiger-classic-fit-dress-shirt',
       category: "Мужские рубашки",
@@ -51,11 +51,11 @@ const sampleData = {
       rating: 4.9,
       numReviews: 3,
       stock: 0,
-      isFeatured: false,
+      isFeauted: false,
       banner: null,
     },
     {
-      id: 4,
+      
       name: 'Тонкая рубашка Calvin Klein',
       slug: 'calvin-klein-slim-fit-stretch-shirt',
       category: "Мужские рубашки",
@@ -69,11 +69,11 @@ const sampleData = {
       rating: 3.6,
       numReviews: 5,
       stock: 10,
-      isFeatured: false,
+      isFeauted: false,
       banner: null,
     },
     {
-      id: 5,
+      
       name: 'Оксфордская рубашка Sara Ralph Lauren',
       slug: 'sara-ralph-lauren-oxford-shirt',
       category: "Мужские рубашки",
@@ -87,11 +87,11 @@ const sampleData = {
       rating: 4.7,
       numReviews: 18,
       stock: 6,
-      isFeatured: false,
+      isFeauted: false,
       banner: null,
     },
     {
-      id: 6,
+      
       name: 'Розовая худи Sara Classic',
       slug: 'sara-classic-pink-hoodie',
       category: "Мужские толстовки",
@@ -105,7 +105,7 @@ const sampleData = {
       rating: 4.6,
       numReviews: 12,
       stock: 8,
-      isFeatured: true,
+      isFeauted: true,
       banner: null,
     },
   ],
