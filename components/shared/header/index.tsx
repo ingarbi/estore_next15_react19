@@ -1,9 +1,8 @@
-import { ShoppingCartIcon, UserIcon } from "lucide-react";
+
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
+
 import { APP_NAME } from "@/lib/constants";
-import ModeToggle from "./mode-toggle";
 import Menu from "./menu";
 
 const Header = () => {
