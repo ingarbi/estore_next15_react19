@@ -19,3 +19,9 @@ export const insertProductShema = z.object({
   banner: z.string().nullable(),
   price: currency,
 });
+
+
+export const signInFormShema = z.object({
+  email: z.string().email("Неправильно введен имейл"),
+  password: z.string().min(6, "Минимум 6 символов")
+})
