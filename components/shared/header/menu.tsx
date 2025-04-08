@@ -9,6 +9,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import UserButton from "./user-button";
 
 const Menu = () => {
   return (
@@ -20,12 +21,10 @@ const Menu = () => {
             <ShoppingCartIcon /> Корзина
           </Link>
         </Button>
-        <Button asChild variant="ghost">
-          <Link href="/sign-in">
-            <UserIcon /> Войти
-          </Link>
-        </Button>
+        <UserButton/>
       </nav>
+
+
       <nav className="md:hidden">
         <Sheet>
           <SheetTrigger className="align-middle">
@@ -39,11 +38,7 @@ const Menu = () => {
                 <ShoppingCartIcon /> Корзина
               </Link>
             </Button>
-            <Button asChild variant="ghost">
-              <Link href="/sign-in">
-                <UserIcon /> Войти
-              </Link>
-            </Button>
+            <UserButton/>
             <SheetDescription></SheetDescription>
           </SheetContent>
         </Sheet>
