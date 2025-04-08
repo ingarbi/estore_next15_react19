@@ -20,8 +20,21 @@ export const insertProductShema = z.object({
   price: currency,
 });
 
-
 export const signInFormShema = z.object({
   email: z.string().email("Неправильно введен имейл"),
-  password: z.string().min(6, "Минимум 6 символов")
-})
+  password: z.string().min(6, "Минимум 6 символов"),
+});
+
+export const signUpFormShema = z
+  .object({
+    name: z.string().min(3, "Имя должно содержать хотя бы 3 символа"),
+    email: z.string().email("Неправильно введен имейл"),
+    password: z.string().min(6, "Минимум 6 символов"),
+    confirmPassword: z
+      .string()
+      .min(6, "Минимум 6 символов и должен совпадать с паролем"),
+  })
+  .refine((data) => data.password === data.confirmPassword, {
+    message: "Пароли не совпадают",
+    path: ["confirmPassword"],
+  });
